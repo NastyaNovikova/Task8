@@ -22,6 +22,7 @@ public class UserController {
         modelMap.addAttribute("users", userService.getAllUsers());
         return "index";
     }
+
     @GetMapping("{id}")
     public String getUserById(@PathVariable ("id") Long id, ModelMap modelMap){
         modelMap.addAttribute("user", userService.getUserById(id));
