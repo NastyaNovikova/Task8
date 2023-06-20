@@ -33,6 +33,7 @@ public class UserDaoImp implements UserDao {
             entityManager.remove(user);
     }
 
+
     @Override
     public User getUserById(Long id) {
         User user = entityManager.find(User.class, id);
